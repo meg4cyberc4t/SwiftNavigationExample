@@ -11,9 +11,9 @@
 		4B70576B2A338EE900D81383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B70576A2A338EE900D81383 /* ContentView.swift */; };
 		4B70576D2A338EEA00D81383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B70576C2A338EEA00D81383 /* Assets.xcassets */; };
 		4B7057712A338EEA00D81383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7057702A338EEA00D81383 /* Preview Assets.xcassets */; };
-		4B70577B2A338EEB00D81383 /* SwiftNavigationExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B70577A2A338EEB00D81383 /* SwiftNavigationExampleTests.swift */; };
-		4B7057852A338EEB00D81383 /* SwiftNavigationExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7057842A338EEB00D81383 /* SwiftNavigationExampleUITests.swift */; };
-		4B7057872A338EEB00D81383 /* SwiftNavigationExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7057862A338EEB00D81383 /* SwiftNavigationExampleUITestsLaunchTests.swift */; };
+		4B7057942A338F9A00D81383 /* SubContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7057932A338F9A00D81383 /* SubContentView.swift */; };
+		4B7057962A33910B00D81383 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7057952A33910B00D81383 /* Routes.swift */; };
+		4B7057982A3392E500D81383 /* SubSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7057972A3392E500D81383 /* SubSubView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +41,10 @@
 		4B70576E2A338EEA00D81383 /* SwiftNavigationExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftNavigationExample.entitlements; sourceTree = "<group>"; };
 		4B7057702A338EEA00D81383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B7057762A338EEB00D81383 /* SwiftNavigationExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNavigationExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B70577A2A338EEB00D81383 /* SwiftNavigationExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNavigationExampleTests.swift; sourceTree = "<group>"; };
 		4B7057802A338EEB00D81383 /* SwiftNavigationExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNavigationExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B7057842A338EEB00D81383 /* SwiftNavigationExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNavigationExampleUITests.swift; sourceTree = "<group>"; };
-		4B7057862A338EEB00D81383 /* SwiftNavigationExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNavigationExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B7057932A338F9A00D81383 /* SubContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentView.swift; sourceTree = "<group>"; };
+		4B7057952A33910B00D81383 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		4B7057972A3392E500D81383 /* SubSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSubView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				4B7057672A338EE900D81383 /* SwiftNavigationExample */,
-				4B7057792A338EEB00D81383 /* SwiftNavigationExampleTests */,
-				4B7057832A338EEB00D81383 /* SwiftNavigationExampleUITests */,
 				4B7057662A338EE900D81383 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +98,9 @@
 				4B70576C2A338EEA00D81383 /* Assets.xcassets */,
 				4B70576E2A338EEA00D81383 /* SwiftNavigationExample.entitlements */,
 				4B70576F2A338EEA00D81383 /* Preview Content */,
+				4B7057932A338F9A00D81383 /* SubContentView.swift */,
+				4B7057952A33910B00D81383 /* Routes.swift */,
+				4B7057972A3392E500D81383 /* SubSubView.swift */,
 			);
 			path = SwiftNavigationExample;
 			sourceTree = "<group>";
@@ -110,23 +111,6 @@
 				4B7057702A338EEA00D81383 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		4B7057792A338EEB00D81383 /* SwiftNavigationExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				4B70577A2A338EEB00D81383 /* SwiftNavigationExampleTests.swift */,
-			);
-			path = SwiftNavigationExampleTests;
-			sourceTree = "<group>";
-		};
-		4B7057832A338EEB00D81383 /* SwiftNavigationExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4B7057842A338EEB00D81383 /* SwiftNavigationExampleUITests.swift */,
-				4B7057862A338EEB00D81383 /* SwiftNavigationExampleUITestsLaunchTests.swift */,
-			);
-			path = SwiftNavigationExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7057982A3392E500D81383 /* SubSubView.swift in Sources */,
 				4B70576B2A338EE900D81383 /* ContentView.swift in Sources */,
+				4B7057962A33910B00D81383 /* Routes.swift in Sources */,
 				4B7057692A338EE900D81383 /* SwiftNavigationExampleApp.swift in Sources */,
+				4B7057942A338F9A00D81383 /* SubContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B70577B2A338EEB00D81383 /* SwiftNavigationExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B7057852A338EEB00D81383 /* SwiftNavigationExampleUITests.swift in Sources */,
-				4B7057872A338EEB00D81383 /* SwiftNavigationExampleUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

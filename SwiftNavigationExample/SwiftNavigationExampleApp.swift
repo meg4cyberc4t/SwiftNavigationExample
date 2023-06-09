@@ -11,7 +11,17 @@ import SwiftUI
 struct SwiftNavigationExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                ContentView()
+                    .navigationDestination(for: Routes.self) { route in
+                        switch route {
+                        case .subContentView:
+                            SubContentView()
+                        case .subSubView:
+                            SubSubView()
+                        }
+                    }
+            }
         }
     }
 }
