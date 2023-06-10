@@ -12,8 +12,9 @@ struct SubContentView: View {
         VStack{
             Text("I am sub content!")
                 .padding()
-            NavigationLink("Come to child again!", value: Routes.subSubView
-            )
+            NavigationLink(
+                "Come to child again!",
+                value: Routes.subSubView)
         }
         .navigationTitle("SubContentView!!")
         
